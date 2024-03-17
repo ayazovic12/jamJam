@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     GameObject mainCharachterPos;
     Vector3 distanceBetween;
-    float speed = 5;
+    float speed = 1;
+    float rotationSpeed = 3f;
 
     Rigidbody enemyRb;
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         distanceBetween = (mainCharachterPos.transform.position - transform.position).normalized;
+        transform.Rotate(distanceBetween);
         enemyRb.AddForce(distanceBetween * speed );
     }
 }

@@ -331,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.1635
+      value: 6.1868954
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -339,23 +339,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.3661
+      value: -5.351881
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.8551558
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.51837116
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -363,7 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -62.446
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c8929712bbd5824c874f74b574680cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -438,7 +438,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &380959926
 MonoBehaviour:
