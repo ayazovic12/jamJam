@@ -6,6 +6,9 @@ public class CombatManager : MonoBehaviour
 {
     private InputManager inputManager;
     private Animator animator;
+
+    [SerializeField] public int lightAttackDamage = 10;
+    [SerializeField] public int heavyAttackDamage = 20;
     
     void Awake()
     {

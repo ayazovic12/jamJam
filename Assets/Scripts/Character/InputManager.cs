@@ -9,7 +9,6 @@ public class InputManager : MonoBehaviour
     [SerializeField] private PlayerInput playerInput;
 
     public bool isPaused = false;
-
     public Vector2 Move { get; private set; }
     public Vector2 Look { get; private set; }
     public bool Run { get; private set; }
