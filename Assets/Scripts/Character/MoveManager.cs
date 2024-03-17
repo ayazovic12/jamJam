@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MoveManager : MonoBehaviour
 {
+    private Animator animator;
     private InputManager inputManager;
     private CharacterController characterController;
     [SerializeField] private float walkSpeed = 5f;
@@ -15,6 +14,7 @@ public class MoveManager : MonoBehaviour
     {
         inputManager = GetComponent<InputManager>();
         characterController = GetComponent<CharacterController>();
+        animator = GetComponentInChildren<Animator>();
     }
     void Start()
     {
@@ -47,7 +47,18 @@ public class MoveManager : MonoBehaviour
     {
         var move = new Vector3(inputManager.Move.x, 0, inputManager.Move.y);
         var moveDirection = transform.TransformDirection(move);
-        var speed = inputManager.Run ? runSpeed : walkSpeed;
+        float speed;
+
+        if (move != Vector3.zero)
+        {
+            speed = inputManager.Run ? runSpeed : walkSpeed;
+        }
+        else
+        {
+            speed = 0;
+        }
+        
         characterController.SimpleMove(moveDirection * speed);
+        animator.SetFloat("MoveSpeed", speed);
     }
 }
