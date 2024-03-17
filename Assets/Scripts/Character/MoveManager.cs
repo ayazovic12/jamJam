@@ -59,6 +59,7 @@ public class MoveManager : MonoBehaviour
         }
         
         characterController.SimpleMove(moveDirection * speed);
-        animator.SetFloat("MoveSpeed", speed);
+        animator.SetFloat("XMoveSpeed", inputManager.Move.x * speed);
+        animator.SetFloat("YMoveSpeed", inputManager.Move.y * speed);
     }
 }
