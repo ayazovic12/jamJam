@@ -13,8 +13,8 @@ public class InputManager : MonoBehaviour
     public Vector2 Move { get; private set; }
     public Vector2 Look { get; private set; }
     public bool Run { get; private set; }
-    public bool Attack1 { get; private set; }
-    public bool Attack2 { get; private set; }
+    public bool Attack1;
+    public bool Attack2;
     public bool Pause { get; private set; }
 
     private InputActionMap currentMap;

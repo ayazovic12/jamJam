@@ -21,9 +21,11 @@ public class MoveManager : MonoBehaviour
         //
     }
 
+    public Vector2 movement;
     void Update()
     {
         Move();
+        movement = inputManager.Move;
     }
 
     void FixedUpdate()
@@ -59,7 +61,7 @@ public class MoveManager : MonoBehaviour
         }
         
         characterController.SimpleMove(moveDirection * speed);
-        animator.SetFloat("XMoveSpeed", inputManager.Move.x * speed);
-        animator.SetFloat("YMoveSpeed", inputManager.Move.y * speed);
+        animator.SetFloat("VerticalMoveSpeed", inputManager.Move.y * speed);
+        animator.SetFloat("HorizontalMoveSpeed", inputManager.Move.x * speed);
     }
 }

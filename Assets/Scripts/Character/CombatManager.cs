@@ -5,10 +5,12 @@ using UnityEngine;
 public class CombatManager : MonoBehaviour
 {
     private InputManager inputManager;
+    private Animator animator;
     
     void Awake()
     {
         inputManager = GetComponent<InputManager>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -21,7 +23,8 @@ public class CombatManager : MonoBehaviour
     {
         if(inputManager.Attack1)
         {
-            Debug.Log("Light Attack");
+            animator.SetTrigger("LightAttackTrigger");
+            inputManager.Attack1 = false;
         }
     }
 
@@ -29,7 +32,8 @@ public class CombatManager : MonoBehaviour
     {
         if(inputManager.Attack2)
         {
-            Debug.Log("Heavy Attack");
+            animator.SetTrigger("HeavyAttackTrigger");
+            inputManager.Attack2 = false;
         }
     }
 }
